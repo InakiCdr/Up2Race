@@ -1,10 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Up2Racev2
 {
-	public class TwitterFeeds
+
+	public interface TwitterFeeds
 	{
-		public TwitterFeeds()
-		{
-		}
+		bool UserName(string username);
+		bool StatusUser(string statusId);
 	}
+
 }

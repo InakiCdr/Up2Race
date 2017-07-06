@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{9E3627FB-3C13-4303-AA90-9E603BD1C248}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="packages/Xamarin.Forms.2.3.3.193/build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets">
+    <Files>
+      <File FileName="iOS/Info.plist" />
+      <File FileName="packages/Xamarin.Forms.2.3.3.193/build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets" Line="4" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Up2Racev2.Droid PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Up2Racev2.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3645ED47-3423-434A-A857-749329CBF020" />
+</Properties>

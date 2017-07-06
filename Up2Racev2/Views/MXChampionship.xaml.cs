@@ -10,6 +10,12 @@ namespace Up2Racev2
 		public MXChampionship()
 		{
 			InitializeComponent();
+			EmbeddedPage();
+		}
+
+		public void EmbeddedPage()
+		{
+			mxgp.Source = "http://www.mxgp.com/";
 		}
 	}
 }

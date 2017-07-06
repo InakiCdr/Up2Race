@@ -10,6 +10,12 @@ namespace Up2Racev2
 		public BSB()
 		{
 			InitializeComponent();
+			EmbeddedPage();
+		}
+
+		public void EmbeddedPage()
+		{
+			bsb.Source = "http://www.britishsuperbike.com/";
 		}
 	}
 }

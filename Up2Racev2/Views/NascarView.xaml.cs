@@ -11,5 +11,15 @@ namespace Up2Racev2
 		{
 			InitializeComponent();
 		}
+
+		async void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new ME_Nascar());
+		}
+
+		async void Handle_Clicked2(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new AutosportNASCAR());
+		}
 	}
 }

@@ -11,5 +11,19 @@ namespace Up2Racev2
 		{
 			InitializeComponent();
 		}
+
+		async void GrandPrix(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new GrandPrix());
+		}
+		async void AutosportF1(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new AutosportF1());
+		}
+
+		async void Fanatic(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new Fanatic());
+		}
 	}
 }

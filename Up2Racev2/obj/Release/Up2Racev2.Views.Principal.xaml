@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Up2Racev2.Principal" Title="Up2Race"
+	BackgroundImage="LogoArriba.jpg" >
+	<ContentPage.Content>
+		<StackLayout>
+			<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+				<Label TextColor="White" Text="All motor news in only one click!" >
+					<Label.FontFamily>
+						<OnPlatform x:TypeArguments="x:String">
+						<OnPlatform.iOS>hurryup</OnPlatform.iOS>
+						<OnPlatform.Android>hurryup.ttf#hurryup</OnPlatform.Android>
+						</OnPlatform>
+					</Label.FontFamily>
+				</Label>
+				<Label TextColor="White" Text="Be up 2 your favourite sport with only 1 app!">
+					<Label.FontFamily>
+						<OnPlatform x:TypeArguments="x:String">
+						<OnPlatform.iOS>hurryup</OnPlatform.iOS>
+						<OnPlatform.Android>hurryup.ttf#hurryup</OnPlatform.Android>
+						</OnPlatform>
+					</Label.FontFamily>
+				</Label>
+				
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" Spacing="10">
+				<Image x:Name="Twitter" Source="" />
+				<Image x:Name="RoadRace" Source="" />
+				<Image x:Name="BSB" Source="" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

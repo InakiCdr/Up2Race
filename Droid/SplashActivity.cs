@@ -13,14 +13,16 @@ using Android.Widget;
 
 namespace Up2Racev2.Droid
 {
-	[Activity(Label = "SplashActivity")]
+
+	//Activity para crear el launch screen en Android
+	[Activity(Theme = "@style/Theme.Splash", MainLauncher = true, NoHistory = true)]
 	public class SplashActivity : Activity
 	{
-		protected override void OnCreate(Bundle savedInstanceState)
+		protected override void OnCreate(Bundle bundle)
 		{
-			base.OnCreate(savedInstanceState);
-
-			// Create your application here
+			base.OnCreate(bundle);
+			System.Threading.Thread.Sleep(1000);
+			this.StartActivity(typeof(MainActivity));
 		}
 	}
 }

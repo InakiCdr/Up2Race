@@ -11,5 +11,15 @@ namespace Up2Racev2
 		{
 			InitializeComponent();
 		}
+
+		async void MXGP_Evt(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new MXChampionship());
+		}
+
+		async void RacerXOnline(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new RacerXOnLine());
+		}
 	}
 }

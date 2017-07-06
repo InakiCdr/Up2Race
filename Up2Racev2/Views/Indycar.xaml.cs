@@ -11,5 +11,15 @@ namespace Up2Racev2
 		{
 			InitializeComponent();
 		}
+
+		async void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new OfficialIndy());
+		}
+
+		async void Handle_Clicked1(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new AutosportIndycar());
+		}
 	}
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -10,6 +11,12 @@ namespace Up2Racev2
 		public IOMTT()
 		{
 			InitializeComponent();
+			EmbeddedPage();
+		}
+
+		public void EmbeddedPage()
+		{
+			ttman.Source = "https://www.iomtt.com/";
 		}
 	}
 }

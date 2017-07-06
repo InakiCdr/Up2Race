@@ -11,5 +11,15 @@ namespace Up2Racev2
 		{
 			InitializeComponent();
 		}
+
+		async void northwest200(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new Northwest());
+		}
+
+		async void IOMTT(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new IOMTT());
+		}
 	}
 }

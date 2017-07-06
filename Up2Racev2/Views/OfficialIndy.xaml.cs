@@ -10,6 +10,12 @@ namespace Up2Racev2
 		public OfficialIndy()
 		{
 			InitializeComponent();
+			EmbeddedPage();
+		}
+
+		public void EmbeddedPage()
+		{
+			indy.Source = "http://www.indycar.com/";
 		}
 	}
 }

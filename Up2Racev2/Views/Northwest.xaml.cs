@@ -10,6 +10,13 @@ namespace Up2Racev2
 		public Northwest()
 		{
 			InitializeComponent();
+
+			EmbeddedPage();
+		}
+
+		public void EmbeddedPage()
+		{
+			northwest.Source = "http://northwest200.org/";
 		}
 	}
 }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Up2Racev2.MenuPage" Title="Up2Race"
+	    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
+	<ContentPage.Content>
+		       <StackLayout VerticalOptions="FillAndExpand">
+				<StackLayout HeightRequest="100" Padding="50">
+					<Image Source="LogoSmall.jpg" WidthRequest="100" 
+						HeightRequest="150" Aspect="AspectFit" />
+				</StackLayout>
+         <ListView 
+				BackgroundColor="#F2F2F2"
+                CachingStrategy="RecycleElement"
+                SeparatorColor="#000000"
+                HasUnevenRows="True"
+                x:Name="ListViewMenu"
+				SelectedItem="{Binding SelectedMenu, Mode=TwoWay}">
+                <ListView.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+<!--                            <RowDefinition Height="30"/>-->
+<!--                            <RowDefinition Height="80"/>-->
+                            <RowDefinition Height="Auto"/>
+<!--                            <RowDefinition Height="5"/>-->
+                        </Grid.RowDefinitions>
+
+                        <BoxView Grid.ColumnSpan="3" 
+                                 Grid.RowSpan="4"
+                                 BackgroundColor="#646566"/>
+<!--						<controls:CircleImage
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            HorizontalOptions="Start"
+                            VerticalOptions="End"
+                            Source="scott159.png"
+                            WidthRequest="75" HeightRequest="75"/>-->
+        <!--                <Label 
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            Text="Up2Race"
+                            Style="{DynamicResource SubtitleStyle}"/>-->
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding Icon}" HeightRequest="15" WidthRequest="25"/>
+                                <Label Grid.Column="1" Text="{Binding Title}" FontAttributes="Bold" HorizontalTextAlignment="Start"
+									FontSize="20" TextColor="#000000">
+									<Label.FontFamily>
+										<OnPlatform x:TypeArguments="x:String">
+											<OnPlatform.iOS>hurryup</OnPlatform.iOS>
+											<OnPlatform.Android>hurryup.ttf#hurryup</OnPlatform.Android>
+										</OnPlatform>
+									</Label.FontFamily>
+
+								</Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+       </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
