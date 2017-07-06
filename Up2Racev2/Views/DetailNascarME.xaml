@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Up2Racev2.DetailNascarME" Title="{Binding Title}">
+	<ContentPage.Content>
+		<StackLayout Margin="14,2,14,0">
+			<Image x:Name="webImage" HeightRequest="120" Aspect="AspectFit" />
+			
+			<Label x:Name="Title" TextColor="Blue" Margin="3"/>
+			<ScrollView>
+				<Label x:Name="Description"  />
+			</ScrollView>
+
+			<Button HeightRequest="50" WidthRequest="150"
+				Text="Read More..."
+				BorderWidth="1"
+				TextColor="Black"
+				BackgroundColor="Silver"
+				Clicked="Handle_Clicked"/>
+		</StackLayout>	
+	</ContentPage.Content>
+</ContentPage>
